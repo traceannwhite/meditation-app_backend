@@ -8,4 +8,4 @@ class BooksSerializer(serializers.HyperlinkedModelSerializer):
         # model to serialize
         model = Books
         #which fields to serialize
-        fields = ["id", "title", "author", "description", "read"]
+        fields = ["id", "image", "title", "author", "description", "read"]
