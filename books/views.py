@@ -1,13 +1,13 @@
-from .models import Timer 
+from .models import Books
 from rest_framework import viewsets, permissions
-from .serializers import TimerSerializer
+from .serializers import BooksSerializer
 
 
 # Create your views here.
-class TimerViewSet(viewsets.ModelViewSet):
+class BooksViewSet(viewsets.ModelViewSet):
     #main query for index route
-    queryset=Timer.objects.all()
+    queryset=Books.objects.all()
     #serializer
-    serializer_class = TimerSerializer
+    serializer_class = BooksSerializer
     # permissions
     permission_classes = [permissions.AllowAny]

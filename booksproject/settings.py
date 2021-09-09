@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'timer.apps.TimerConfig',
+    'books.apps.BooksConfig',
     'rest_framework',
     'corsheaders'
 ]
@@ -56,7 +56,7 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-ROOT_URLCONF = 'timerproject.urls'
+ROOT_URLCONF = 'booksproject.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'timerproject.wsgi.application'
+WSGI_APPLICATION = 'booksproject.wsgi.application'
 
 
 # Database

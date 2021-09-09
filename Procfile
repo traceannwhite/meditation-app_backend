@@ -1,1 +1,1 @@
-web: gunicorn timerproject.wsgi
+web: gunicorn booksproject.wsgi

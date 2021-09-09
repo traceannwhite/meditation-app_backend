@@ -1,11 +1,11 @@
-from .models import Timer
+from .models import Books
 from rest_framework import serializers
 
 ## serializer for our model
-class TimerSerializer(serializers.HyperlinkedModelSerializer):
+class BooksSerializer(serializers.HyperlinkedModelSerializer):
     #nest meta data for the serializer
     class Meta: 
         # model to serialize
-        model = Timer
+        model = Books
         #which fields to serialize
-        fields = ["id", "time_field"]
+        fields = ["id", "title", "author", "description", "read"]

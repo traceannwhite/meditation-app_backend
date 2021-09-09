@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from timer.views import TimerViewSet
+from books.views import BooksViewSet
 
 #create router
 router = routers.DefaultRouter()
 #register our viewsets
-router.register(r'timer', TimerViewSet)
+router.register(r'books', BooksViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
